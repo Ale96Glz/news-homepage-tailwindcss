@@ -554,17 +554,6 @@ video {
   --tw-contain-style:  ;
 }
 
-.bg-overlay {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 40;
-  height: 100%;
-  width: 100%;
-  background-color: rgb(38 38 38 / var(--tw-bg-opacity));
-  --tw-bg-opacity: 0.5;
-}
-
 .menu-hidden {
   position: absolute;
   top: 0px;
@@ -576,24 +565,35 @@ video {
   background-color: hsl(36 100% 99% / var(--tw-bg-opacity));
 }
 
-.fixed {
-  position: fixed;
+.primary-button {
+  --tw-bg-opacity: 1;
+  background-color: hsl(5 85% 63% / var(--tw-bg-opacity));
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  --tw-text-opacity: 1;
+  color: hsl(240 100% 5% / var(--tw-text-opacity));
+}
+
+.primary-button:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(240 100% 5% / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: hsl(36 100% 99% / var(--tw-text-opacity));
 }
 
 .relative {
   position: relative;
 }
 
-.inset-0 {
-  inset: 0px;
-}
-
 .z-10 {
   z-index: 10;
-}
-
-.z-20 {
-  z-index: 20;
 }
 
 .ml-7 {
@@ -650,10 +650,6 @@ video {
 
 .max-w-full {
   max-width: 100%;
-}
-
-.max-w-xs {
-  max-width: 20rem;
 }
 
 .transform {
@@ -743,16 +739,6 @@ video {
   background-color: hsl(240 100% 5% / var(--tw-bg-opacity));
 }
 
-.bg-primary-soft-red {
-  --tw-bg-opacity: 1;
-  background-color: hsl(5 85% 63% / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -765,16 +751,6 @@ video {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
 }
 
 .py-4 {
@@ -800,25 +776,12 @@ video {
   font-size: 15px;
 }
 
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
 
 .font-extrabold {
   font-weight: 800;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-
-.tracking-widest {
-  letter-spacing: 0.1em;
 }
 
 .text-neutral-dark-grayish-blue {

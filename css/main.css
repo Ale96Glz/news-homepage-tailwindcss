@@ -9,4 +9,7 @@
   .menu-hidden {
     @apply absolute top-0 right-0 w-[65vw] h-screen bg-neutral-off-white overflow-y-auto;
   }
+  .primary-button {
+    @apply px-8 py-3 font-extrabold text-xs uppercase bg-primary-soft-red tracking-widest text-neutral-very-dark-blue hover:bg-neutral-very-dark-blue hover:text-neutral-off-white;
+  }
 }
