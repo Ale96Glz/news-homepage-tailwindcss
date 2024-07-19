@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .bg-overlay {
+    @apply absolute top-0 left-0 w-full h-full bg-neutral-800 bg-opacity-50 z-40;
+  }
+  .menu-hidden {
+    @apply absolute top-0 right-0 w-[65vw] h-screen bg-neutral-off-white overflow-y-auto;
+  }
+}

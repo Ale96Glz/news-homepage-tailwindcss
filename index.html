@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body class="min-h-screen px-4 py-4 font-inter text-body max-w-full">
+    <div class="relative z-10">
+      <header class="mt-3">
+        <nav class="flex items-center justify-between">
+          <div>
+            <img class="w-2/3" src="assets/images/logo.svg" alt="logo" />
+          </div>
+          <div class="hidden md:block">
+            <ul class="flex gap-6 text-neutral-grayish-blue">
+              <li class="hover:text-primary-soft-red">Home</li>
+              <li class="hover:text-primary-soft-red">New</li>
+              <li class="hover:text-primary-soft-red">Popular</li>
+              <li class="hover:text-primary-soft-red">Trending</li>
+              <li class="hover:text-primary-soft-red">Categories</li>
+            </ul>
+          </div>
+          <div class="block md:hidden">
+            <button id="menu">
+              <img
+                class="cursor-pointer"
+                src="assets/images/icon-menu.svg"
+                alt="icon-menu"
+              />
+            </button>
+          </div>
+          <div
+            class="menu-hidden hidden"
+            id="menu-hidden"
+          >
+            <div class="grid h-screen">
+              <img
+                src="assets/images/icon-menu-close.svg"
+                alt="icon-menu-close"
+                class="justify-self-end mt-3 mr-4 cursor-pointer transform"
+                id="close"
+              />
+              <ul class="space-y-4 ml-7 text-neutral-grayish-blue">
+                <li class="hover:text-primary-soft-red">Home</li>
+                <li class="hover:text-primary-soft-red">New</li>
+                <li class="hover:text-primary-soft-red">Popular</li>
+                <li class="hover:text-primary-soft-red">Trending</li>
+                <li class="hover:text-primary-soft-red">Categories</li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <section class="space-y-5 lg:col-span-2">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="assets/images/image-web-3-mobile.jpg"
+            />
+            <img src="assets/images/image-web-3-desktop.jpg" alt="Image" />
+          </picture>
+          <div class="grid gap-3 grid-cols-1 md:grid-cols-2">
+            <h1 class="font-extrabold text-4xl text-neutral-very-dark-blue">
+              The Bright Future of Web 3.0?
+            </h1>
+            <div class="space-y-3">
+              <p class="text-neutral-dark-grayish-blue">
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <button
+                class="px-8 py-3 font-extrabold text-xs uppercase bg-primary-soft-red tracking-widest text-neutral-very-dark-blue"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+        </section>
+        <section
+          class="bg-neutral-very-dark-blue text-neutral-grayish-blue p-5 grid place-content-center"
+        >
+          <article class="space-y-6 lg:space-y-8">
+            <h1 class="text-primary-soft-orange font-bold text-3xl lg:text-4xl">
+              New
+            </h1>
+
+            <div class="space-y-2 lg:space-y-4">
+              <h2 class="text-neutral-off-white font-bold lg:text-xl">
+                Hydrogen VS Electric Cars
+              </h2>
+              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </div>
+            <hr />
+
+            <div class="space-y-2 lg:space-y-4">
+              <h2 class="text-neutral-off-white font-bold lg:text-xl">
+                The Downsides of AI Artistry
+              </h2>
+              <p>
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </div>
+            <hr />
+
+            <div class="space-y-2 lg:space-y-4">
+              <h2 class="text-neutral-off-white font-bold lg:text-xl">
+                Is VC Funding Drying Up?
+              </h2>
+              <p>
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </div>
+          </article>
+        </section>
+        <section
+          class="grid gap-4 grid-cols-1 md:col-span-2 lg:col-span-3 md:grid-cols-2 lg:grid-cols-3"
+        >
+          <article class="grid gap-4 grid-cols-2 max-w-80">
+            <div>
+              <img
+                class="object-cover w-full"
+                src="assets/images/image-retro-pcs.jpg"
+                alt="PCs"
+              />
+            </div>
+            <div class="flex flex-col justify-between">
+              <h1 class="text-primary-soft-red font-bold text-3xl">01</h1>
+              <h2 class="font-extrabold">Reviving Retro PCs</h2>
+              <p>What happens when old PCs are given modern upgrades?</p>
+            </div>
+          </article>
+          <article class="grid gap-4 grid-cols-2 max-w-80">
+            <div>
+              <img
+                class="object-cover w-full"
+                src="assets/images/image-top-laptops.jpg"
+                alt="Laptops"
+              />
+            </div>
+            <div class="flex flex-col justify-between">
+              <h1 class="text-primary-soft-red font-bold text-3xl">02</h1>
+              <h2 class="font-extrabold">Top 10 Laptops of 2022</h2>
+              <p>Our best picks for various needs and budgets.</p>
+            </div>
+          </article>
+          <article class="grid gap-4 grid-cols-2 max-w-80">
+            <div>
+              <img
+                class="object-cover w-full"
+                src="assets/images/image-gaming-growth.jpg"
+                alt="Gaming"
+              />
+            </div>
+            <div class="flex flex-col justify-between">
+              <h1 class="text-primary-soft-red font-bold text-3xl">03</h1>
+              <h2 class="font-extrabold">The Growth of Gaming</h2>
+              <p>How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
